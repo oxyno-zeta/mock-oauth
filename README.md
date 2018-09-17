@@ -1,16 +1,15 @@
-# web-go-simple
+## Mock OAuth server
 
-Go Web Sample Application
+Implements the following endpoints with minimal validations
+- /auth endpoint
+- /token endpoint
+- /userinfo endpoint
 
-# Developer Workspace
-[![Contribute](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=mrky0fswrdu7t43m)
-
-# Stack to use
-
-FROM [codenvy/ubuntu_go](https://hub.docker.com/r/codenvy/ubuntu_go/)
-
-# How to run
+## How to run
 
 | #       | Description           | Command  |
 | :------------- |:-------------| :-----|
 | 1      | Run | `cd ${current.project.path} && go get -d && go run main.go` |
+
+## Userinfo for a specific username
+Set the env var `username=some_username`
